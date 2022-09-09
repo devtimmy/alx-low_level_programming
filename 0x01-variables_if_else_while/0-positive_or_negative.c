@@ -3,14 +3,15 @@
 /**
  * main - Entry point
  *
- * Return: 0 Always Success
+ * Return: Always 0 success
  */
-int (main)
+int main(void)
 {
 	int n;
-	srand(time));
+	srand(time(0));
+
 	n = rand() - RAND_MAX / 2;
-	if (n==0)
+	if (n == 0)
 	{
 		printf("%i is zero\n", n);
 	}
@@ -22,6 +23,5 @@ int (main)
 	{
 		printf("%i is positive\n", n);
 	}
-	return(0);
+	return (0);
 }
-
