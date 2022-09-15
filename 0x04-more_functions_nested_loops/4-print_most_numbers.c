@@ -3,7 +3,7 @@
 
 /**
  * print_most_numbers - prints numbers except 2 and 4
- * Return: 0
+ * Return: returns nothing
  */
 
 void print_most_numbers(void)
@@ -18,5 +18,5 @@ void print_most_numbers(void)
 		}
 		_putchar(n);
 	}
-	_putchar(10)
+	_putchar('\n');
 }
