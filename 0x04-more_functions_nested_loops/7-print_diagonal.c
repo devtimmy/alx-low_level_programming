@@ -2,11 +2,11 @@
 /**
  * print_diagonal - prints slash
  * @n: parameter
+ * Return: 0
  */
 void print_diagonal(int n)
 {
-	int i = 0;
-	int j;
+	int i, j;
 
 	if (n > 0)
 	{
@@ -16,7 +16,7 @@ void print_diagonal(int n)
 			{
 				_putchar(' ');
 			}
-			_putchar('\\);
+			_putchar('\\');
 
 			if (i == (n - 1))
 			{
