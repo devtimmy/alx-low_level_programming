@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-int i, j, n, x;
+	int i, j, n, x;
 
 	i = n = 0;
 	x = 1;
@@ -16,7 +16,7 @@ int i, j, n, x;
 			x *= -1;
 		i++;
 	}
-	j = 1;
+	j = i;
 	while ((s[j] >= '0') && (s[j] <= '9'))
 	{
 		n = (n * 10) + x * ((s[j]) - '0');
