@@ -7,10 +7,14 @@
  */
 int _strlen(char *s)
 {
-	int c = 0;
+	int i = 1, sum = 0;
 
-	while (*s[c] != '\0')
-		c++;
+	char = pl = s[0];
 
-	return (c);
+	while (pl != '\0')
+	{
+		sum++;
+		pl = s[i++];
+	}
+	return (sum);
 }
