@@ -2,15 +2,15 @@
 
 /**
  * print_list - prints list.
- * @h: param list
- * Return: struct
+ * @h: linked list
+ * Return: the number of nodes
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t l_node;
+	size_t firstNode;
 
-	l_node = 0;
+	firstNode = 0;
 	while (h != NULL)
 	{
 		if (h->str == NULL)
@@ -22,7 +22,7 @@ size_t print_list(const list_t *h)
 			printf("[%d] %s\n", h->len, h->str);
 		}
 		h = h->next;
-		l_node++;
+		firstNode++;
 	}
-	return (l_node);
+	return (firstNode);
 }
